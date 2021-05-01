@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/all.min.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/all.min.js"></script>
+    <title>U3. Dispositivos de red</title>
+</head>
+<body>
+    <div class="menu">
+        <h1>Unidad 3. Dispositivos de red</h1>
+        <a href="#inicio">
+            <h2>Inicio</h2>
+        </a>
+        <dl>
+            <dt>
+                <a href="#st3">
+                    <h2>3. Dispositivos de red</h2>
+                </a>
+            </dt>
+            <dd>
+                <a href="#st31">
+                    <h2>3.1 Dispositivos de capa física</h2>
+                </a>
+            </dd>
+            <dd>
+                <a href="#st32">
+                    <h2>3.2 Dispositivos de capa de enlace</h2>
+                </a>
+            </dd>
+            <dd>
+                <a href="#st33">
+                    <h2>3.3 Dispositivos de capa de red</h2>
+                </a>
+            </dd>
+            <dd>
+                <a href="#st34">
+                    <h2>3.4 Dispositivos de capas superiores</h2>
+                </a>
+            </dd>
+        </dl>
+    </div>
+    <div class="subtemas">
+        <section class="inicio view top" id="inicio">
+            <img class = "imgl" src="assets/img/logoTecNM.png" alt="">
+            <img class = "imgr" src="assets/img/logoITC.png" alt="">
+            <h3>TECNOLÓGICO NACIONAL DE MÉXICO</h3>
+            <h3>INSTITUTO TECNOLÓGICO DE CUAUTLA</h3>
+            <h3>Redes de computadoras</h2>
+            <h3>Unidad 3. Dispositivos de red</h1>
+            <p>Profesor: Guillermo Urzúa Sánchez</p>
+            <p>Alumno: Martínez Sánchez José Roberto</p>
+        </section>
+        <section class="st3 view" id="st3">
+            <h2>3. Dispositivos de red</h2>
+            <p>
+                Los dispositivos de hardware que se utilizan para conectar computadoras, impresoras, máquinas de fax y otros dispositivos electrónicos a una red se denominan dispositivos de red. Estos dispositivos transfieren datos de forma rápida, segura y correcta a través de redes iguales o diferentes. Los dispositivos de red pueden estar entre redes o dentro de la red. Algunos dispositivos están instalados en el dispositivo, como la tarjeta NIC o el conector RJ45, mientras que algunos son parte de la red, como el enrutador, el conmutador, etc. <br> En este sitio web se mostrarán algunos de estos dispositivos con mayor detalle que son utilizados en cada capa del modelo TCP / IP.
+            </p>
+            <img src="assets/img/network-device.jpg" alt="">
+        </section>
+        <section class="st31 view" id="st31">
+            <div class="info">
+                <h2>3.1 Dispositivos de capa física</h2>
+                <p>
+                    La capa física del modelo TCP / IP es responsable de la conectividad física de dos dispositivos. Algunos de los dispositivos utilizados en las capas físicas son:
+                </p>
+            </div>
+            <p>Deslizar horizontalmente para ver más dispositivos</p>
+            <div class="dispositivos">
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Hubs</h4>
+                        <p>
+                            Los hubs (concentradores) son dispositivos que se utilizan normalmente para conectar segmentos de una LAN. Contiene múltiples puertos de entrada / salida. Cuando la señal está en cualquier puerto de entrada, esta señal se hará en todos los puertos de salida excepto en el que proviene.
+                        </p>
+                    </div>
+                    <img src="assets/img/network-hubs.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Repeaters</h4>
+                        <p>
+                            Los repeaters (repetidores) se utilizan en los sistemas de transmisión para regenerar señales analógicas o digitales distorsionadas por la pérdida de transmisión. Los repetidores analógicos sólo pueden amplificar la señal, mientras que los repetidores digitales pueden reproducir una señal cercana a su calidad original.
+                        </p>
+                    </div>
+                    <img src="assets/img/repeater.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Cables</h4>
+                        <p>
+                            En la arquitectura de red cableada (por ejemplo, Ethernet), los cables se utilizan para interconectar los dispositivos. Algunos de los tipos de cables son el cable coaxial, el cable de fibra óptica y el cable de par trenzado.
+                        </p>
+                        <div class="ejemplos">
+                            <h4>Ejemplos:</h4>
+                            <div style="display: flex; flex-direction: column;">
+                                <img style="width: 30%;" src="assets/img/rj45.png" alt="">
+                                <p>Conector RJ45</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <img style="width: 70%;" src="assets/img/Optical-Fiber-cable-Shireen.png" alt="">
+                                <p>Fibra óptica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="st32 view" id="st32">
+            <div class="info">
+                <h2>3.2 Dispositivos de capa de enlace</h2>
+                <p>
+                    La capa de enlace de datos es responsable de transferir datos salto a salto (es decir, dentro de la misma LAN, de un dispositivo a otro) según la dirección MAC. Algunos de los dispositivos utilizados en la capa de enlace de datos son:
+                </p>
+            </div>
+            <p>Deslizar horizontalmente para ver más dispositivos</p>
+            <div class="dispositivos">
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Brigdes</h4>
+                        <p>
+                            Un bridge (puente) es un tipo de dispositivo de red informática que proporciona interconexión con otras redes que utilizan el mismo protocolo , conectando dos redes diferentes juntas y comunicación entre ellas.
+                        </p>
+                    </div>
+                    <img src="assets/img/bridge.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Modems</h4>
+                        <p>
+                            Módem son las siglas de MOdulator / DEModulator. Un módem convierte las señales digitales generadas por la computadora en señales analógicas que, luego, pueden transmitirse a través de una línea de cable y transforma las señales analógicas entrantes en equivalentes digitales.
+                        </p>
+                    </div>
+                    <img src="assets/img/whatismodem.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Tarjetas de interfaz de red</h4>
+                        <p>
+                            La tarjeta de interfaz de red es un dispositivo electrónico que se monta en la ROM del com que conecta una computadora a una red de computadoras, generalmente una LAN. Se considera una pieza de hardware de computadora. La mayoría de las computadoras modernas admiten un controlador de interfaz interno integrado en la placa base directamente, en lugar de proporcionarse como un componente externo.
+                        </p>
+                    </div>
+                    <img src="assets/img/nic.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Switches de capa 2</h4>
+                        <p>
+                            Los switches capa 2 se denominan a los switches tradicionales donde el swicth no tiene «inteligencia», generalmente son switches no administrables donde todos los puertos tienen la misma configuración; los switches de capa 2 no consiguen, filtrar difusiones o broadcasts, y multicasts. <br> <br>
+                            Cuando un switch Capa 2 es administrable se pueden crear Vlans. <br> <br>
+                            Los switches capa 2 no soportan ruteo intervlans. <br> <br>
+                            En los Switches capa 2 no se puede segmentar la red, por ser su precio menor es recomendable para el concepto de LAN extendida o cuando se tiene gran cantidad de dispositivos en un mismo segmento de RED. <br>
+                            El estándar de red Capa 2 mas conocido es Ethernet IEEE 802.XX
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="st33 view" id="st33">
+            <div class="info">
+                <h2>3.3 Dispositivos de capa de red</h2>
+                <p>
+                    La capa de red es responsable de crear la tabla de enrutamiento y, en función de la tabla de enrutamiento, reenviar la solicitud de entrada. Algunos de los dispositivos utilizados en la capa de red son:
+                </p>
+            </div>
+            <p>Deslizar horizontalmente para ver más dispositivos</p>
+            <div class="dispositivos">
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Routers</h4>
+                        <p>
+                            Un routers (enrutador) es un dispositivo similar a un switch (conmutador) que enruta / reenvía paquetes de datos en función de sus direcciones IP. Los enrutadores normalmente conectan la red de área local (LAN) y la red amplia (WAN) juntas y tienen una tabla de enrutamiento que se actualiza dinámicamente en función de la cual toman decisiones sobre el enrutamiento de los paquetes entrantes.
+                        </p>
+                    </div>
+                    <img src="assets/img/router.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Brouters</h4>
+                        <p>
+                            Un puente enrutador o brouter es un dispositivo de red que funciona como puente y como enrutador. El brouter enruta paquetes para protocolos conocidos y simplemente reenvía todos los demás paquetes como lo haría un puente. Los brouters operan tanto en la capa de red para protocolos enrutables (o entre redes con diferentes protocolos de capa de enlace de datos, por ejemplo, uno se ejecuta en Ethernet (802.3) y la otra red se ejecuta en Token Ring (802.5)) y en la capa de enlace de datos -protocolos enrutables (o ambas redes utilizan el mismo protocolo de capa de enlace de datos).
+                        </p>
+                    </div>
+                    <img src="assets/img/brouter.png" alt="">
+                </div>
+                <div class="dispositivo">
+                    <div class="texto">
+                        <h4>Switches de capa 3</h4>
+                        <p>
+                            Los switches capa 3 o superior permiten crear, en un mismo dispositivo, múltiples redes de nivel 3 y encaminar los paquetes realizando Funciones de routing. La siguiente es una muestra de la oferta que existe de estos dispositivos en el canal, con diferentes funciones que van más allá de enlazar equipos.
+                        </p>
+                    </div>
+                    <img src="assets/img/switch.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="st34 view" id="st34">
+            <h2>3.4 Dispositivos de capas superiores</h2>
+            <dl>
+                <dt><h4>Dispositivos de capa de transporte</h4></dt>
+                <dd><p>
+                    La capa de transporte es responsable de la comunicación de extremo a extremo (o comunicación de proceso a proceso). Algunos de los dispositivos de la capa de transporte son:
+                </p></dd>
+                <dd>
+                    <dl>
+                        <dd>
+                            <h4>Gateways</h4>
+                            <p>
+                                En las redes informáticas, un gateway (puerta de enlace) es un componente que forma parte de dos redes que utilizan protocolos diferentes. La puerta de enlace es un convertidor de protocolos que traducirá un protocolo en otro. Un enrutador es un caso especial de puerta de enlace.
+                            </p>
+                        </dd>
+                        <dd>
+                            <h4>Firewalls</h4>
+                            <p>
+                                Un firewall (cortafuegos) es un sistema diseñado para evitar el acceso no autorizado hacia o desde una red privada, algunas de las funcionalidades del cortafuegos son, filtrado de paquetes y como servidor proxy.
+                            </p>
+                        </dd>
+                    </dl>
+                </dd>
+                <dt><h4>Dispositivos de capa de aplicación</h4></dt>
+                <dd><p>
+                    La capa de aplicación es la capa superior del modelo TCP / IP que proporciona la interfaz entre las aplicaciones y la red. La capa de aplicación se utiliza para intercambiar mensajes. Algunos de los dispositivos utilizados en la capa de aplicación son:
+                </p></dd>
+                <dd>
+                    <dl>
+                        <dd><h4>Gateways</h4></dd>
+                        <dd><h4>Firewalls</h4></dd>
+                        <dd><h4>Todos los dispositivos finales como: teléfonos, servidores, consolas, smart TVs
+                        </h4></dd>
+                    </dl>
+                </dd>
+                <dd></dd>
+            </dl>
+            <img style="width: 50%; position: absolute; z-index: -1; top: 3%; right: 5%; opacity: 0.25;" src="assets/img/network-firewall-diagram.png" alt="">
+            <img style="width: 30%; position: absolute; z-index: -1; bottom: 0%; right: 5%; opacity: 0.25;" src="assets/img/app.png" alt="">
+            <!-- <p>Deslizar horizontalmente para ver más dispositivos</p>
+            <div class="dispositivos">
+                <div class="dispositivo">
+                    <div class="texto">
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </div>
+</body>
+</html>

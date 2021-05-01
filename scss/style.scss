@@ -1,0 +1,171 @@
+body
+{
+    font-family: 'Varela Round', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    position: relative;
+    scroll-behavior:smooth;
+
+    $c1: #119da4;
+    $c1h: #119da449;
+    $c2: #0c7489;
+    $c3: #13505b;
+    $d: #1f1f1f;
+    $l: #ecede8;
+    $lh: rgba(227, 228, 221, 0.212);
+
+    h1
+    {
+        font-size: larger;
+        text-align: center;
+        color: $l;
+        font-weight: 900;
+    }
+
+    h2
+    {
+        font-size: medium;
+    }
+
+    .menu
+    {
+        width: 325px;
+        position: fixed;
+        height: 100vh;
+        border-right: solid 1px $d;
+        padding: 0px 12px;
+        background-color: $c1;
+
+        a {
+            text-decoration: none;
+            h2
+            {
+                padding: 0.25em;
+                //border-bottom: solid 1px $c3;
+                color: $l;
+            }
+            :hover
+            {
+                background-color: $lh;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .view
+    {
+        height: 100vh;
+        padding: 12px;
+        border-top: solid 1px $c1;
+        overflow: scroll;
+        display: flex;
+            flex-direction: column;
+
+        h2
+        {
+            color: $c3;
+        }
+
+        .info
+        {
+            height: 15%;
+        }
+    }
+
+    .top
+    {
+        border-top: none;
+    }
+
+    .subtemas
+    {
+        width: calc(100% - 325px - 24px);
+        float: right;
+        scroll-snap-type: y mandatory;
+
+        .inicio
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .imgl
+            {
+                position: absolute;
+                left: 5%;
+                top: 3%;
+                width: 15%;
+                z-index: -10;
+                opacity: 0.5;
+            }
+
+            .imgr
+            {
+                position: absolute;
+                right: 5%;
+                top: 3%;
+                width: 8%;
+                z-index: -10;
+                opacity: 0.5;
+            }
+        }
+
+        .dispositivos
+        {
+            scroll-snap-type: x mandatory;
+            height: 60%;
+            //padding: 2em;
+            display: flex;
+            background-color: $l;
+            overflow-x: scroll;
+            border-radius: 8px;
+        }
+
+        .dispositivo
+        {
+            //margin-left: 4em;
+            min-width: 100%;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            vertical-align: top;
+            align-items: center;
+            img
+            {
+                width: 20%;
+            }
+            .texto
+            {
+                width: 90%;
+                margin: auto;
+
+                .ejemplos
+                {
+                    display: flex;
+                    p{ display: inline-block; }
+                }
+            }
+        }
+
+        .st3 > img
+        {
+            width: 40%;
+            margin: auto;
+        }
+
+        .st34
+        {
+            position: relative;
+        }
+    }
+
+    .scroll
+    {
+        scroll-snap-align: start;
+    }
+}
